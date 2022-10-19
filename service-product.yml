@@ -6,8 +6,6 @@ spring:
       database: bootcamp_product_db
       host: localhost
       port: 8901
-  config:
-    import: optional:configserver:http://localhost:8888
 management:
   endpoints:
     web:
