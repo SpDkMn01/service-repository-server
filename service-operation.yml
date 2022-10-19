@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: bootcamp_operation_db
       host: localhost
-      port: 8092
+      port: 8903
   config:
     import: optional:configserver:http://localhost:8888
 management:
@@ -18,3 +18,5 @@ server:
 message:
   path-operation: /api/v1/operations
   path-operationType: /api/v1/operationTypes
+  uri: /api/v1/operationTypes
+  uri2: /api/v1/customerProductsPassive

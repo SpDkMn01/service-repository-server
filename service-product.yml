@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: bootcamp_product_db
       host: localhost
-      port: 8092
+      port: 8901
   config:
     import: optional:configserver:http://localhost:8888
 management:
@@ -18,3 +18,4 @@ server:
 message:
   path-product: /api/v1/products
   path-productType: /api/v1/productTypes
+  uri: /api/v1/productTypes/

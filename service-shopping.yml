@@ -5,7 +5,7 @@ spring:
     mongodb:
       database: bootcamp_shopping_db
       host: localhost
-      port: 8092
+      port: 8904
   config:
     import: optional:configserver:http://localhost:8888
 management:
@@ -17,3 +17,4 @@ server:
   port: 8006
 message:
   path-shopping: /api/v1/shoppings
+  uri: /api/v1/customerTypes/
