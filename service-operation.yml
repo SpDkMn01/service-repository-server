@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-operation
+    name: service-operation
   data:
     mongodb:
       database: bootcamp_operation_db
@@ -18,3 +18,7 @@ message:
   path-operationType: /api/v1/operationTypes
   uri: /api/v1/operationTypes
   uri2: /api/v1/customerProductsPassive
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.31.220:8000/eureka/

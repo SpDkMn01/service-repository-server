@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-payment
+    name: service-payment
   data:
     mongodb:
       database: bootcamp_payment_db
@@ -16,3 +16,7 @@ server:
 message:
   path-payment: /api/v1/payment
   uri: /api/v1/customerProductsActive/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.31.220:8000/eureka/

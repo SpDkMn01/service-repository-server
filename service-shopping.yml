@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-shopping
+    name: service-shopping
   data:
     mongodb:
       database: bootcamp_shopping_db
@@ -16,3 +16,7 @@ server:
 message:
   path-shopping: /api/v1/shoppings
   uri: /api/v1/customerTypes/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.31.220:8000/eureka/
