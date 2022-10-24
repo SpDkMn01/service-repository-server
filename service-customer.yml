@@ -1,11 +1,11 @@
 spring:
   application:
-    name: service-customer
+    name: ms-customer
   data:
     mongodb:
       database: bootcamp_customer_db
-      host: localhost
-      port: 8900
+      host: db_customer
+      port: 27017
 management:
   endpoints:
     web:

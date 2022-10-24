@@ -1,18 +1,18 @@
 spring:
   application:
-    name: service-customer-product
+    name: ms-customer-product
   data:
     mongodb:
       database: bootcamp_customer_product_db
-      host: localhost
-      port: 8902
+      host: db_customer_product
+      port: 27017
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8002
+  port: 8000
 message:
   path-customerProductPassive: /api/v1/customerProductsPassive
   path-customerProductActive: /api/v1/customerProductsActive

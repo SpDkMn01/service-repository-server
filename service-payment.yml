@@ -1,18 +1,18 @@
 spring:
   application:
-    name: service-payment
+    name: ms-payment
   data:
     mongodb:
       database: bootcamp_payment_db
-      host: localhost
-      port: 8905
+      host: db_payment
+      port: 27017
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8004
+  port: 8000
 message:
   path-payment: /api/v1/payment
   uri: /api/v1/customerProductsActive/

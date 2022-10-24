@@ -1,18 +1,18 @@
 spring:
   application:
-    name: service-operation
+    name: ms-operation
   data:
     mongodb:
       database: bootcamp_operation_db
-      host: localhost
-      port: 8903
+      host: db_operation
+      port: 27017
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8003
+  port: 8000
 message:
   path-operation: /api/v1/operations
   path-operationType: /api/v1/operationTypes
