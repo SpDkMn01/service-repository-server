@@ -4,7 +4,7 @@ spring:
   data:
     mongodb:
       database: bootcamp_payment_db
-      host: db_payment
+      host: localhost
       port: 27021
 management:
   endpoints:

@@ -4,7 +4,7 @@ spring:
   data:
     mongodb:
       database: bootcamp_operation_db
-      host: db_operation
+      host: localhost
       port: 27020
 management:
   endpoints:

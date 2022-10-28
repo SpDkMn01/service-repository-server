@@ -4,7 +4,7 @@ spring:
   data:
     mongodb:
       database: bootcamp_shopping_db
-      host: db_shopping
+      host: localhost
       port: 27022
 management:
   endpoints:
