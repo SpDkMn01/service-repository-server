@@ -5,14 +5,14 @@ spring:
     mongodb:
       database: bootcamp_customer_product_db
       host: db_customer_product
-      port: 27017
+      port: 27019
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8000
+  port: 8083
 message:
   path-customerProductPassive: /api/v1/customerProductsPassive
   path-customerProductActive: /api/v1/customerProductsActive
@@ -22,4 +22,4 @@ message:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.31.220:8000/eureka/
+      defaultZone: http://localhost:8001/eureka/

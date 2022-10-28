@@ -5,18 +5,18 @@ spring:
     mongodb:
       database: bootcamp_payment_db
       host: db_payment
-      port: 27017
+      port: 27021
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8000
+  port: 808
 message:
   path-payment: /api/v1/payment
   uri: /api/v1/customerProductsActive/
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.31.220:8000/eureka/
+      defaultZone: http://localhost:8001/eureka/

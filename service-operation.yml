@@ -5,14 +5,14 @@ spring:
     mongodb:
       database: bootcamp_operation_db
       host: db_operation
-      port: 27017
+      port: 27020
 management:
   endpoints:
     web:
       exposure:
         include: "*"
 server:
-  port: 8000
+  port: 8084
 message:
   path-operation: /api/v1/operations
   path-operationType: /api/v1/operationTypes
@@ -21,4 +21,4 @@ message:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.31.220:8000/eureka/
+      defaultZone: http://localhost:8001/eureka/
